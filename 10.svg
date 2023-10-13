@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Glyph / Media / Sessions</title>
+    <g id="Glyph-/-Media-/-Sessions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Glyph-Tint" transform="translate(3.000000, 2.000000)">
+            <path d="M0,26 L0,7.93628682 L0,7.93628682 L13,0 L26,7.93628682 L26,26 C26,27.1045695 25.1045695,28 24,28 L2,28 C0.8954305,28 1.3527075e-16,27.1045695 0,26 Z" id="Home" stroke="#cc63e9" stroke-width="2"></path>
+            <path d="M14,11 L14,28 L14,28 L12,28 L12,11 C12,10.4477153 12.4477153,10 13,10 C13.5522847,10 14,10.4477153 14,11 Z" id="Bar" fill="#cc63e9" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#cc63e9" x="12" y="6" width="2" height="2" rx="1"></rect>
+            <path d="M20,15 L20,28 L20,28 L18,28 L18,15 C18,14.4477153 18.4477153,14 19,14 C19.5522847,14 20,14.4477153 20,15 Z" id="Bar" fill="#cc63e9" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#cc63e9" x="18" y="10" width="2" height="2" rx="1"></rect>
+            <path d="M8,22 L8,27 C8,27.5522847 7.55228475,28 7,28 C6.44771525,28 6,27.5522847 6,27 L6,22 L6,22 L8,22 Z" id="Bar" fill="#cc63e9" fill-rule="nonzero" transform="translate(7.000000, 25.000000) rotate(-180.000000) translate(-7.000000, -25.000000) "></path>
+            <rect id="Rectangle" fill="#cc63e9" x="6" y="18" width="2" height="2" rx="1"></rect>
+        </g>
+    </g>
+</svg>

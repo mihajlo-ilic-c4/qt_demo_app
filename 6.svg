@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Glyph/Location/Fireplace</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-OS3-Icons-map-to-OS-Next" transform="translate(-1836.000000, -554.000000)">
+            <g id="Assets-Objects" transform="translate(1836.000000, 215.000000)">
+                <g id="Glyph-Tint" transform="translate(2.500000, 340.500000)">
+                    <path d="M0,29 L0,13.5 C-9.13077564e-16,6.04415588 6.04415588,1.36961635e-15 13.5,0 L13.5,0 L13.5,0 C20.9558441,-1.36961635e-15 27,6.04415588 27,13.5 L27,29 L27,29 L0,29 Z" id="Home" stroke="#F57F25"></path>
+                    <path d="M13.5,24.5 C14.8807119,24.5 16,23.3807119 16,22 C16,21.0795254 15.1666667,19.2461921 13.5,16.5 C11.8333333,19.2461921 11,21.0795254 11,22 C11,23.3807119 12.1192881,24.5 13.5,24.5 Z" id="Flame" fill="#F57F25"></path>
+                    <path d="M18.875,24.5 C19.9105339,24.5 20.75,23.6605339 20.75,22.625 C20.75,21.9346441 20.125,20.5596441 18.875,18.5 C17.625,20.5596441 17,21.9346441 17,22.625 C17,23.6605339 17.8394661,24.5 18.875,24.5 Z" id="Flame" fill="#F57F25"></path>
+                    <path d="M7.875,24.5 C8.91053391,24.5 9.75,23.6605339 9.75,22.625 C9.75,21.9346441 9.125,20.5596441 7.875,18.5 C6.625,20.5596441 6,21.9346441 6,22.625 C6,23.6605339 6.83946609,24.5 7.875,24.5 Z" id="Flame" fill="#F57F25"></path>
+                    <line x1="6" y1="26.5" x2="21" y2="26.5" id="Path-2" stroke="#F57F25" stroke-width="2" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
