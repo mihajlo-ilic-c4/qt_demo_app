@@ -6,6 +6,7 @@
 
 #include <QQuickPaintedItem>
 #include <QPainter>
+#include <QTimer>
 
 class FpsCounter : public QQuickPaintedItem
 {
@@ -23,12 +24,16 @@ public:
 signals:
     void fpsChanged();
 
+private slots:
+    void onSecond();
+
 private:
     void recalculateFPS();
-    int _currentFPS;
-    int _cacheCount;
-    QVector<qint64> _times;
+    unsigned _fps;
+    unsigned _tempFps;
     QVector<unsigned> _history;
+
+    QTimer _timer;
 };
 
 #endif // FPSCOUNTER_HPP

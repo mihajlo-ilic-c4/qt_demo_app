@@ -11,8 +11,7 @@
         <file>8.svg</file>
         <file>9.svg</file>
         <file>10.svg</file>
-        <file>bg.png</file>
-        <file>bg1.png</file>
+        <file>bg.svg</file>
         <file>arrow.svg</file>
     </qresource>
 </RCC>

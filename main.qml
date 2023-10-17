@@ -1,3 +1,7 @@
+/*
+ * Copyright 2023 Snap One, LLC. All Rights Reserved.
+*/
+
 import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
@@ -9,11 +13,6 @@ Window
     height: 800
     visible: true
     title: qsTr("Hello World")
-
-    Component.onCompleted:
-    {
-        showFullScreen()
-    }
 
     property var randSentences: ["Delegate", "Delegato", "Item", "Row",
         "Generic Title", "Big Title Text", "Really Really Huge Title Text",
@@ -95,7 +94,8 @@ Window
         focus: true
         background: Image
         {
-            source: "qrc:/bg.png"
+            source: "qrc:/bg.svg"
+            cache: false
         }
 
         initialItem: mainList
@@ -145,8 +145,8 @@ Window
                 height: 100
 
                 color: "#121d36"
-
                 radius: 30
+
 
                 Keys.onReleased:
                 {
@@ -167,6 +167,8 @@ Window
                     anchors.verticalCenter: parent.verticalCenter
 
                     anchors.leftMargin: 20
+                    asynchronous: true
+                    sourceSize: Qt.size(32, 32)
                 }
 
                 Image
@@ -178,6 +180,8 @@ Window
                     anchors.verticalCenter: parent.verticalCenter
 
                     anchors.rightMargin: 20
+                    asynchronous: true
+                    sourceSize: Qt.size(32, 32)
                 }
 
                 Text
@@ -259,6 +263,7 @@ Window
 
                         width: 90
                         height: 90
+
                     }
                 }
 

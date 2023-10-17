@@ -5,6 +5,7 @@
 #include <QQmlApplicationEngine>
 #include <QSettings>
 #include <QQmlContext>
+#include <QLoggingCategory>
 
 #include "FpsCounter.hpp"
 
@@ -29,7 +30,7 @@ int main(int argc, char *argv[])
     bool autoScroll = settings.value("auto-scroll", false).toBool();
     bool autoScrollExit = settings.value("auto-scroll-exit", true).toBool();
     unsigned scrollSpeed = settings.value("scroll-speed", 500).toUInt();
-    bool transparentDelegates = settings.value("transparent-delegates", true).toBool();
+    bool transparentDelegates = settings.value("transparent-delegates", false).toBool();
     bool useFpsCounter = settings.value("show-fps-counter", true).toBool();
 
     engine.rootContext()->setContextProperty("listSize", listSize);

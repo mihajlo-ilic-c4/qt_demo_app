@@ -4,13 +4,18 @@
 */
 #include "FpsCounter.hpp"
 #include <QDateTime>
+#include <QFile>
 
 const int SECOND = 1000;
 
-FpsCounter::FpsCounter(): QQuickPaintedItem(), _currentFPS(0), _cacheCount(0)
+FpsCounter::FpsCounter(): QQuickPaintedItem(), _fps(0), _tempFps(0)
 {
-    _times.clear();
     setFlag(QQuickItem::ItemHasContents);
+    connect(&_timer, &QTimer::timeout, this, &FpsCounter::onSecond);
+
+    _timer.setInterval(SECOND);
+    _timer.setSingleShot(false);
+    _timer.start();
 }
 
 FpsCounter::~FpsCounter()
@@ -30,24 +35,7 @@ FpsCounter::~FpsCounter()
 
 void FpsCounter::paint(QPainter *painter)
 {
-    qint64 currentTime = QDateTime::currentDateTime().toMSecsSinceEpoch();
-    _times.push_back(currentTime);
-
-    while (_times[0] < currentTime - SECOND)
-    {
-        _times.pop_front();
-    }
-
-    int currentCount = _times.length();
-    _currentFPS = (currentCount + _cacheCount) / 2;
-
-    if (currentCount != _cacheCount)
-    {
-        _history.push_back(_currentFPS);
-        Q_EMIT fpsChanged();
-    }
-
-    _cacheCount = currentCount;
+    _tempFps++;
 
     QBrush brush(Qt::black);
 
@@ -60,5 +48,16 @@ void FpsCounter::paint(QPainter *painter)
 
 int FpsCounter::fps() const
 {
-    return _currentFPS;
+    return _fps;
+}
+
+void FpsCounter::onSecond()
+{
+    _fps = _tempFps;
+
+    _history.push_back(_fps);
+
+    Q_EMIT fpsChanged();
+
+    _tempFps = 0;
 }
